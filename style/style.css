@@ -7,6 +7,8 @@ body{
     background: linear-gradient(45deg, #000, #1a1a1a, #141414, #252525);
     background-size: 400% 400%;
     color: white;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
 }
 
 ul{
@@ -24,6 +26,9 @@ a{
     /* Colors */
     --color-black: #000;
     --color-white: #fff;
+    --color-font: #f0eee4;
+    --color-font-dark: #202020;
+    --color-bg-yellow: #e1c340;
 }
 
 /* Header*/
@@ -37,6 +42,7 @@ a{
 
 .logotype{
     font-size: 1.5rem;
+    margin-left: 35px;
 }
 
 /* Navigation */
@@ -46,16 +52,99 @@ a{
 }
 
 
-.navigation li a{
+.navigation li a, a.btn-contact{
     display: inline-block;
     width: 100px;
     margin-left: 40px;
     text-align: center;
-    border: 2px solid var(--color-black);
+    border: 2px solid var(--color-white);
     padding: 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-font);
+    transition: .5s;
+    border-radius: 5px;
 }
 
-/* 
+.navigation li a.btn-contact{
+    background: var(--color-bg-yellow);
+    border: 2px solid var(--color-bg-yellow);
+    color: var(--color-white);
+}
+
+/* .navigation li a.btn-contact:hover{
+
+} */
+
+.navigation li a:hover{
+    background: rgba(34, 32, 32, 0.3);
+}
+
+/* Content */
+.content-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 50px; */
+    text-align: left;
+}
+
+.presentation{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+}
+
+.presentation > div > h1{
+    font-size:  4.25rem;
+    line-height: 0;
+}
+
+.presentation > div > h3{
+    font-size:  2.25rem;
+    line-height: 0;
+}
+
+.presentation > div > h3 > span{
+    font-size: 2.75rem;
+    color: var(--color-bg-yellow);
+}
+
+.presentation > p{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.presentation a.btn-contact{
+    margin: 10px 0;
+    background: linear-gradient(to right, var(--color-bg-yellow) 50%, transparent 50%);
+    background-size: 200%;
+    background-position: 100%;
+    transition: 0.6s;
+}
+.presentation a.btn-contact:hover{
+    background-position: 0%;
+}
+
+
+
+
+.photo-home{
+    width: 55%;
+    display: flex;
+    justify-content: end;
+}
+
+.photo-home > img{
+    width: 58%;
+    /* float: right; */
+}
+
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 45%;
@@ -66,4 +155,4 @@ a{
 	100% {
 		background-position: 0% 45%;
 	}
-} */
+}
