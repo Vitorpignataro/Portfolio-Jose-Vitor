@@ -37,12 +37,17 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 0px 40px;
 }
 
 .logotype{
     font-size: 1.5rem;
     margin-left: 35px;
+}
+
+.logotype > img{
+    width: 40%;
+    height: 40%;
 }
 
 /* Navigation */
@@ -73,12 +78,15 @@ a{
     color: var(--color-white);
 }
 
-/* .navigation li a.btn-contact:hover{
-
-} */
 
 .navigation li a:hover{
-    background: rgba(34, 32, 32, 0.3);
+    opacity: 0.5;
+}
+
+.navigation li a.btn-contact:hover{
+    border: 2px solid var(--color-white);
+    opacity: 1;
+
 }
 
 /* Content */
@@ -105,7 +113,8 @@ a{
 
 .presentation > div > h3{
     font-size:  2.25rem;
-    line-height: 0;
+    line-height: 0px;
+    /* line-height: 36px; só utilizado quando deixar responsivo */
 }
 
 .presentation > div > h3 > span{
@@ -129,8 +138,6 @@ a{
 .presentation a.btn-contact:hover{
     background-position: 0%;
 }
-
-
 
 
 .photo-home{
