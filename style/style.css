@@ -47,7 +47,7 @@ a{
     margin-left: 35px;
 }
 
-.logotype > img{
+.logotype a img{
     width: 40%;
     height: 40%;
 }
@@ -146,7 +146,7 @@ a{
 
 
 /* Content */
-.content-section{
+.content-section, .about-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,11 +154,15 @@ a{
     text-align: left;
 }
 
-.presentation{
+.about-section{
+    align-items: flex-start;
+}
+
+.presentation, .about-content{
     margin-left: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     width: 45%;
 }
 
@@ -178,7 +182,7 @@ a{
     color: var(--color-bg-yellow);
 }
 
-.presentation > p{
+.presentation > p, .about-card > p{
     margin: 0;
     font-size: 1rem;
     line-height: 24px;
@@ -195,7 +199,6 @@ a{
     background-position: 0%;
 }
 
-
 .photo-home{
     width: 55%;
     display: flex;
@@ -205,6 +208,14 @@ a{
 .photo-home > img{
     width: 58%;
     /* float: right; */
+}
+
+.about-card{
+    border-radius: 5px;
+    overflow-y: auto;
+    height: 450px;
+    border: 3px solid var(--color-white);
+    padding: 30px;
 }
 
 
