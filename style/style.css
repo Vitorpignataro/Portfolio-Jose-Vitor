@@ -13,6 +13,7 @@ body{
 
 ul{
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 a{
@@ -29,6 +30,7 @@ a{
     --color-font: #f0eee4;
     --color-font-dark: #202020;
     --color-bg-yellow: #e1c340;
+    --color-bg-dark: #111111;
 }
 
 /* Header*/
@@ -52,14 +54,14 @@ a{
 
 /* Navigation */
 
-.navigation{
+.navigation .main-navigation{
     display: flex;
 }
 
 
-.navigation li a, a.btn-contact{
+.navigation .main-navigation li a, a.btn-contact, .navigation li.sub-navigation a{
     display: inline-block;
-    width: 100px;
+    width: 102px;
     margin-left: 40px;
     text-align: center;
     border: 2px solid var(--color-white);
@@ -72,22 +74,76 @@ a{
     border-radius: 5px;
 }
 
-.navigation li a.btn-contact{
+.navigation .main-navigation li a.btn-contact{
     background: var(--color-bg-yellow);
     border: 2px solid var(--color-bg-yellow);
     color: var(--color-white);
 }
 
 
-.navigation li a:hover{
+.navigation .main-navigation li a:hover{
     opacity: 0.5;
 }
 
-.navigation li a.btn-contact:hover{
+.navigation .main-navigation li a.btn-contact:hover{
     border: 2px solid var(--color-white);
     opacity: 1;
 
 }
+
+.navigation li.sub-navigation{
+    position: relative;
+    border: none;
+    background: none;
+    display: none;
+}
+
+.navigation li.sub-navigation a{
+    color: #fff;
+    width: 30px;
+    padding: 13px;
+    font-size: 1.5rem;
+}
+
+.nav-hamb {
+    cursor: pointer;
+    position: absolute; 
+    right: 0;
+    top: 100%;
+    background-color: var(--color-bg-dark);
+    display: none;
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0px;
+}
+
+.nav-hamb > ul li {
+    padding: 0;
+    width: 150px;
+    text-align: center;
+}
+
+.sub-navigation .nav-hamb ul li a{
+    display: block;
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+
+.sub-navigation:hover .nav-hamb{
+    display: block;
+    font-size: 1rem;
+}
+
+.nav-hamb > ul li:hover{
+    background-color: rgb(46, 46, 46);
+    transition: 0.7s;
+}
+
 
 /* Content */
 .content-section{
@@ -163,3 +219,25 @@ a{
 		background-position: 0% 45%;
 	}
 }
+
+
+@media (max-width: 850px) { 
+    .navigation .main-navigation{
+        display: none;
+    }
+
+    .navigation li.sub-navigation{
+        display: block;
+    }
+ }
+
+
+/* @media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+@media (min-width: 1200px) { ... } */
