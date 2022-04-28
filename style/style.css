@@ -11,6 +11,10 @@ body{
     height: 100vh;
 }
 
+html {
+    overflow-y: overlay;
+  }
+
 ul{
     list-style-type: none;
     padding-inline-start: 0;
@@ -309,7 +313,7 @@ a{
 /* Projects Section */
 .tabs{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 25px auto;
     position: relative;
 }
@@ -331,7 +335,6 @@ a{
 }
 
 .project-content, .writeup-content{
-    width: 100%;
     display: none;
     position: absolute;
     left: 0;
@@ -355,7 +358,50 @@ a{
     display: none;
 }
 
+/* Cards Project */
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 20px 0;
+}
 
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.card > img{
+    width: 90%;
+    transition: 0.8s;
+    border-radius: 5px; 
+}
+
+
+.card-content{
+    position: absolute;
+    bottom: -20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.card:hover img, .card:hover .card-content{
+    width: 95%;
+    display: flex;
+}
+
+.card-content > a > i, .card-content > i{
+    color: white;
+    font-size: 3rem;
+}
 
 @keyframes gradient {
 	0% {
