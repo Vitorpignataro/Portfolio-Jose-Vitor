@@ -4,7 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(45deg, #000, #1a1a1a, #141414, #252525);
+    background: linear-gradient(45deg, var(--color-black), #1a1a1a, #141414, var(--color-bg-dark-light));
     background-size: 400% 400%;
     color: white;
     animation: gradient 10s ease infinite;
@@ -31,6 +31,8 @@ a{
     --color-font-dark: #202020;
     --color-bg-yellow: #e1c340;
     --color-bg-dark: #111111;
+    --color-bg-dark-light: #252525;
+    --color-pink: #ed145b;
 }
 
 /* Header*/
@@ -180,7 +182,7 @@ a{
     width: 100px;
     text-align: center;
     padding: 5px;
-    background-image: linear-gradient(to top, #ed145b 50%, transparent 50%);
+    background-image: linear-gradient(to top, var(--color-pink) 50%, transparent 50%);
     /* background-image: linear-gradient(to top, #ed145b 30%, transparent 60%); */
     background-size: 100% 200%;
     background-position: 0% 0%; 
@@ -280,7 +282,7 @@ a{
     height: 450px;
     /* border: 2px solid var(--color-white); */
     padding: 30px;
-    background-color: #252525;
+    background-color: var(--color-bg-dark-light);
 }
 
 .about-card{
@@ -289,7 +291,7 @@ a{
 
 
 ::-webkit-scrollbar-track {
-    background-color: #252525;
+    background-color: var(--color-bg-dark-light);
 }
 .about-card::-webkit-scrollbar {
     width: 25px;
@@ -299,6 +301,61 @@ a{
     background: var(--color-bg-yellow);
     /* box-shadow: 0 0 10px var(--color-bg-yellow); */
 }
+
+
+
+
+
+/* Projects Section */
+.tabs{
+    width: 100%;
+    height: 100%;
+    margin: 25px auto;
+    position: relative;
+}
+
+.tabs ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs ul li label{
+    display: block;
+    height: 15px;
+    width: 120px;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 5px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.project-content, .writeup-content{
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #111111;
+    padding: 0 25px;
+}
+
+
+.tab-check:checked ~ label{
+    background-color: #111111;
+    color: var(--color-font);
+}
+
+
+.tab-check:checked ~ .project-content, .tab-check:checked ~ .writeup-content{
+    display: block;
+}
+
+
+.tab-check{
+    display: none;
+}
+
+
 
 @keyframes gradient {
 	0% {
