@@ -428,7 +428,7 @@ a{
 }
 
 #footer span a{
-    color: var(--color-font-dark);
+    color: var(--color-font);
 
 }
 
@@ -593,6 +593,10 @@ a{
 
     a.btn-contact{
         width: 90%;
+    }
+
+    .project-cards{
+        grid-template-columns: 1fr;
     }
 }
 
