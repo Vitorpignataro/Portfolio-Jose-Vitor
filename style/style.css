@@ -494,7 +494,7 @@ a{
 
 
 
-@media (min-width:400px) { 
+/* @media (min-width:400px) { 
 
     .navigation .main-navigation{
         display: none;
@@ -559,4 +559,54 @@ a{
         width: 20%;
     }
 
+} */
+
+@media screen and (max-width: 450px) {
+    .navigation .main-navigation{
+        display: none;
+    }
+
+    .navigation li.sub-navigation{
+        display: block;
+    }
+
+    .content-section{
+        flex-direction: column;
+    }
+
+    .presentation, .about-content, .logotype{
+        margin-left: 0;
+    }
+
+    .content-section  > .presentation,  .content-section  > .photo-home{
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .presentation > div > h1{
+        line-height: 15px;
+    }
+    
+    .presentation > div > h3, .presentation p{
+        margin-bottom: 50px;
+    }
+
+    a.btn-contact{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 955px) {
+    .navigation .main-navigation{
+        display: none;
+    }
+
+    .navigation li.sub-navigation{
+        display: block;
+    }
+    .presentation > div > h3{
+        line-height: 40px;
+        margin: 0;
+    }
 }
