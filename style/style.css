@@ -451,116 +451,6 @@ a{
 }
 
 
-
-
- /* @media (min-width:320px) {
-     
-    .navigation .main-navigation{
-        display: none;
-    }
-
-    .navigation li.sub-navigation{
-        display: block;
-    }
-
-    .content-section{
-        flex-direction: column;
-    }
-
-    .content-section  > .presentation,  .content-section  > .photo-home{
-        margin-top: 50px;
-        width: 90%;
-    }
-
-    .presentation > div > h1{
-        line-height: 15px;
-    }
-    
-    .presentation > div > h3, .presentation p{
-        margin-bottom: 50px;
-    }
-
-    a.btn-contact{
-        width: 90%;
-    }
-
- } */
-
-
-@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-
-
-
-/* @media (min-width:400px) { 
-
-    .navigation .main-navigation{
-        display: none;
-    }
-
-    .navigation li.sub-navigation{
-        display: block;
-    }
-
-    .content-section{
-        flex-direction: column;
-    }
-
-    .content-section  > .presentation,  .content-section  > .photo-home{
-        margin-top: 50px;
-        width: 90%;
-    }
-
-    .presentation > div > h1{
-        line-height: 15px;
-    }
-    
-    .presentation > div > h3, .presentation p{
-        margin-bottom: 50px;
-    }
-
-    a.btn-contact{
-        width: 90%;
-    }
-
-}
-
-
-@media (min-width:850px){
-
-    .navigation .main-navigation{
-        display: flex;
-    }
-
-    .navigation li.sub-navigation{
-        display: none;
-    }
-
-    .content-section{
-        flex-direction: row;
-    }
-
-    .content-section  > .presentation,  .content-section  > .photo-home{
-        margin-top: 0px;
-        width: 50%;
-    }
-
-    .presentation > div > h1{
-        line-height: 0px;
-    }
-    
-    .presentation > div > h3, .presentation p{
-        margin-bottom: 20px;
-    }
-
-    a.btn-contact{
-        width: 20%;
-    }
-
-} */
-
 @media screen and (max-width: 450px) {
     .navigation .main-navigation{
         display: none;
@@ -568,6 +458,7 @@ a{
 
     .navigation li.sub-navigation{
         display: block;
+        z-index: 1;
     }
 
     .content-section{
@@ -598,6 +489,48 @@ a{
     .project-cards{
         grid-template-columns: 1fr;
     }
+
+    .card{
+        margin-bottom: 80px;
+    }
+
+    .about-section > .photo-home{
+        display: none;
+    }
+
+    .about-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-card{
+        height: 600px;
+    }
+
+    #footer {
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact-section{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-section a, #contact-section p{
+        margin-left: 0;
+        margin-right: 0;
+        margin: 10px;
+
+    }
+
+    #footer{
+        margin-left: 0;
+    }
+
 }
 
 
