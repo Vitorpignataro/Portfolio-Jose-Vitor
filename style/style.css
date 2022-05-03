@@ -476,6 +476,7 @@ a{
 
     .presentation > div > h1{
         line-height: 15px;
+        margin: 18px 0;
     }
     
     .presentation > div > h3, .presentation p{
@@ -529,6 +530,15 @@ a{
 
     #footer{
         margin-left: 0;
+    }
+
+    #footer span{
+       margin: 5px;
+    }
+
+    .content-section > .photo-home > img{
+        width: 90%;
+        /* float: right; */
     }
 
 }
