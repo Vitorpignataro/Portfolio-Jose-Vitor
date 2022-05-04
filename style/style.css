@@ -451,14 +451,13 @@ a{
 }
 
 
-@media screen and (max-width: 450px) {
-    .navigation .main-navigation{
-        display: none;
-    }
 
-    .navigation li.sub-navigation{
-        display: block;
-        z-index: 1;
+
+@media screen and (max-width: 850px) {
+
+    .presentation > div > h1{
+        line-height: 15px;
+        margin: 18px 0;
     }
 
     .content-section{
@@ -474,9 +473,32 @@ a{
         width: 90%;
     }
 
-    .presentation > div > h1{
-        line-height: 15px;
-        margin: 18px 0;
+    a.btn-contact{
+        width: 50%;
+    }
+
+    .project-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section > .photo-home{
+        display: none;
+    }
+
+    .about-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .navigation .main-navigation{
+        display: none;
+    }
+
+    .navigation li.sub-navigation{
+        display: block;
     }
     
     .presentation > div > h3, .presentation p{
@@ -488,7 +510,7 @@ a{
     }
 
     .project-cards{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .card{
@@ -525,7 +547,6 @@ a{
         margin-left: 0;
         margin-right: 0;
         margin: 10px;
-
     }
 
     #footer{
@@ -538,7 +559,6 @@ a{
 
     .content-section > .photo-home > img{
         width: 90%;
-        /* float: right; */
     }
 
 }
@@ -551,9 +571,18 @@ a{
 
     .navigation li.sub-navigation{
         display: block;
+        z-index: 1;
     }
+
     .presentation > div > h3{
         line-height: 40px;
         margin: 0;
+    }
+
+    #footer {
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
     }
 }
