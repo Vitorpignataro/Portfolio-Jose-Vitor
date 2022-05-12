@@ -32,6 +32,7 @@ a{
     --color-black: #000;
     --color-white: #fff;
     --color-font: #f0eee4;
+    --color-font-g: #adadad;
     --color-font-dark: #202020;
     --color-bg-yellow: #e1c340;
     --color-bg-dark: #111111;
@@ -427,13 +428,18 @@ a{
     margin-left: 5px;
 }
 
+#footer span a i:hover{
+    color: var(--color-font-g);
+
+}
+
 #footer span a{
     color: var(--color-font);
 
 }
 
 #footer span a:hover{
-    color: var(--color-font);
+    color: var(--color-font-g);
     text-decoration: underline;
 
 }
