@@ -46,7 +46,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px;
+    padding: 10px 40px;
+    /* margin-top: 10px; */
 }
 
 .logotype{
