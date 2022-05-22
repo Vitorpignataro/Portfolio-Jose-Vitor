@@ -46,7 +46,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px;
+    padding: 5px 40px;
 }
 
 .logotype{
@@ -55,8 +55,8 @@ a{
 }
 
 .logotype a img{
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
 }
 
 /* Navigation */
