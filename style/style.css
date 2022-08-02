@@ -337,6 +337,7 @@ a{
 
 .project-content, .writeup-content{
     width: 96%;
+    height: 100%;
     display: none;
     position: absolute;
     left: 0;
@@ -406,6 +407,10 @@ a{
 .card-content > a > i, .card-content > i{
     color: white;
     font-size: 3rem;
+}
+
+.writeup-tittle{
+    color: var(--color-bg-yellow);
 }
 
 /* Footer */
